@@ -1,0 +1,21 @@
+Laboratório Grupo 01 | Python/ICMP → HTTP JSON → Flask → SQLite
+
+[normal]
+POST 201 {"cenario": "normal", "descartados_simulados": 0, "disponivel": true, "dispositivo": "SW-LAB", "enviados": 4, "id": 1, "instante": "2026-11-11T00:06:28+00:00", "ip": "127.0.0.1", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+POST 201 {"cenario": "normal", "descartados_simulados": 0, "disponivel": true, "dispositivo": "AP-LAB", "enviados": 4, "id": 2, "instante": "2026-11-11T00:06:31+00:00", "ip": "127.0.0.2", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+
+[perda_parcial]
+POST 201 {"cenario": "perda_parcial", "descartados_simulados": 0, "disponivel": true, "dispositivo": "SW-LAB", "enviados": 4, "id": 3, "instante": "2026-11-11T00:06:34+00:00", "ip": "127.0.0.1", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+POST 201 {"cenario": "perda_parcial", "descartados_simulados": 2, "disponivel": true, "dispositivo": "AP-LAB", "enviados": 4, "id": 4, "instante": "2026-11-11T00:06:37+00:00", "ip": "127.0.0.2", "latencia_ms": 0.0, "perda_pct": 50.0, "recebidos": 2, "recebidos_icmp": 4}
+
+[falha]
+POST 201 {"cenario": "falha", "descartados_simulados": 0, "disponivel": true, "dispositivo": "SW-LAB", "enviados": 4, "id": 5, "instante": "2026-11-11T00:06:40+00:00", "ip": "127.0.0.1", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+POST 201 {"cenario": "falha", "descartados_simulados": 4, "disponivel": false, "dispositivo": "AP-LAB", "enviados": 4, "id": 6, "instante": "2026-11-11T00:06:43+00:00", "ip": "127.0.0.2", "latencia_ms": null, "perda_pct": 100.0, "recebidos": 0, "recebidos_icmp": 4}
+
+[recuperacao]
+POST 201 {"cenario": "recuperacao", "descartados_simulados": 0, "disponivel": true, "dispositivo": "SW-LAB", "enviados": 4, "id": 7, "instante": "2026-11-11T00:06:46+00:00", "ip": "127.0.0.1", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+POST 201 {"cenario": "recuperacao", "descartados_simulados": 0, "disponivel": true, "dispositivo": "AP-LAB", "enviados": 4, "id": 8, "instante": "2026-11-11T00:06:49+00:00", "ip": "127.0.0.2", "latencia_ms": 0.0, "perda_pct": 0.0, "recebidos": 4, "recebidos_icmp": 4}
+
+GET 200 | 8 registros conferidos no SQLite pela API.
+Banco local: monitor.db
+Resultado: operação normal, perda parcial, falha e recuperação verificadas.

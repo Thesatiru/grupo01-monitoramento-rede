@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="app.diagrams.net" type="device">
+  <diagram name="Arquitetura do sistema distribuído" id="grupo01">
+    <mxGraphModel grid="1" gridSize="10" guides="1" page="1" pageScale="1" pageWidth="1120" pageHeight="600" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="text-2" value="Arquitetura do sistema distribuído" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=36;fontColor=#12283F;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="19" width="1068" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="text-3" value="Coleta, armazenamento e consulta de medições" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=24;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="67" width="1068" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="alvos" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#755391;font-size:26px&quot;&gt;Alvos de teste&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;SW-LAB e AP-LAB&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;127.0.0.1 e 127.0.0.2&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#F8F3FA;strokeColor=#755391;strokeWidth=2;dashed=1;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="153" width="251" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="agente" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#17665C;font-size:26px&quot;&gt;Coletor Python&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Executa ping e calcula&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;disponibilidade, RTT&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;e perda de pacotes&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#E9F7F2;strokeColor=#17665C;strokeWidth=2;dashed=0;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="425" y="153" width="258" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="api" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#17665C;font-size:26px&quot;&gt;API Flask&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Valida as medições&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;127.0.0.1:5000&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#E9F7F2;strokeColor=#17665C;strokeWidth=2;dashed=0;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="817" y="153" width="263" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="sqlite" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#17665C;font-size:26px&quot;&gt;SQLite&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Mantém o histórico&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Arquivo local&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#E9F7F2;strokeColor=#17665C;strokeWidth=2;dashed=0;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="817" y="414" width="263" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="streamlit" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#17665C;font-size:26px&quot;&gt;Painel Streamlit&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Exibe as métricas&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;127.0.0.1:8501&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#E9F7F2;strokeColor=#17665C;strokeWidth=2;dashed=0;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="425" y="414" width="258" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="browser" value="&lt;div style=&quot;font-family:Segoe UI;line-height:1.28&quot;&gt;&lt;b style=&quot;color:#17665C;font-size:26px&quot;&gt;Navegador&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;color:#36536B;font-size:22px&quot;&gt;Consulta o painel&lt;/span&gt;&lt;/div&gt;" style="rounded=1;absoluteArcSize=1;arcSize=24;whiteSpace=wrap;html=1;fillColor=#E9F7F2;strokeColor=#17665C;strokeWidth=2;dashed=0;align=left;verticalAlign=middle;spacing=0;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="40" y="414" width="251" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="ping" style="rounded=0;html=1;strokeColor=#165F89;strokeWidth=3;exitX=0.000000;exitY=0.500000;entryX=1.000000;entryY=0.500000;startArrow=block;endArrow=block;startFill=1;endFill=1;startSize=9;endSize=9;" edge="1" parent="1" source="agente" target="alvos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="post" style="rounded=0;html=1;strokeColor=#165F89;strokeWidth=3;exitX=1.000000;exitY=0.500000;entryX=0.000000;entryY=0.500000;startArrow=none;endArrow=block;startFill=1;endFill=1;startSize=9;endSize=9;" edge="1" parent="1" source="agente" target="api">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sql" style="rounded=0;html=1;strokeColor=#165F89;strokeWidth=3;exitX=0.581749;exitY=1.000000;entryX=0.581749;entryY=0.000000;startArrow=none;endArrow=block;startFill=1;endFill=1;startSize=9;endSize=9;" edge="1" parent="1" source="api" target="sqlite">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="get" style="rounded=0;html=1;strokeColor=#165F89;strokeWidth=3;exitX=0.500000;exitY=0.000000;entryX=0.159696;entryY=1.000000;startArrow=none;endArrow=block;startFill=1;endFill=1;startSize=9;endSize=9;" edge="1" parent="1" source="streamlit" target="api">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="554" y="345" />
+              <mxPoint x="859" y="345" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="http" style="rounded=0;html=1;strokeColor=#165F89;strokeWidth=3;exitX=1.000000;exitY=0.513761;entryX=0.000000;entryY=0.513761;startArrow=none;endArrow=block;startFill=1;endFill=1;startSize=9;endSize=9;" edge="1" parent="1" source="browser" target="streamlit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="text-4" value="ICMP" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=22;fontColor=#165F89;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="291" y="185" width="134" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="text-5" value="ping" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=20;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="291" y="225" width="134" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="text-6" value="HTTP/JSON" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=20;fontColor=#165F89;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="683" y="185" width="134" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="text-7" value="POST" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=20;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="683" y="225" width="134" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="text-8" value="GET /api/medicoes" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=22;fontColor=#165F89;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="614" y="309" width="222" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="text-9" value="HTTP/JSON" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=20;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="643" y="358" width="184" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="text-10" value="SQL" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=22;fontColor=#165F89;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="984" y="301" width="78" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="text-11" value="Lê e grava" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=19;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="984" y="332" width="108" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="text-12" value="HTTP" style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=center;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=22;fontColor=#165F89;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="291" y="438" width="134" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="text-13" value="O coletor envia as medições para POST /api/medicoes e o painel consulta a mesma rota via GET." style="text;html=1;strokeColor=none;fillColor=none;verticalAlign=middle;align=left;spacing=0;spacingLeft=0;whiteSpace=wrap;overflow=visible;fontFamily=Segoe UI;fontSize=22;fontColor=#36536B;fontStyle=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="1040" height="28" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
