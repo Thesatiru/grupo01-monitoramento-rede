@@ -1,0 +1,19 @@
+Evidência T03-e – Log do coletor com o reenvio da fila
+Data e hora: 17/11/2026 15:43:05
+Comando: docker compose logs --tail 15 coletor
+----------------------------------------------------------------------
+coletor  | 18:42:33 [ciclo 805] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.049 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (135 pendente(s))
+coletor  | 18:42:38 [ciclo 806] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.056 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (136 pendente(s))
+coletor  | 18:42:38 [ciclo 806] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (137 pendente(s))
+coletor  | 18:42:43 [ciclo 807] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.069 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (138 pendente(s))
+coletor  | 18:42:43 [ciclo 807] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.054 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (139 pendente(s))
+coletor  | 18:42:48 [ciclo 808] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.064 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (140 pendente(s))
+coletor  | 18:42:48 [ciclo 808] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.057 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (141 pendente(s))
+coletor  | 18:42:51 [ciclo 809] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.048 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (142 pendente(s))
+coletor  | 18:42:51 [ciclo 809] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.047 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (143 pendente(s))
+coletor  | 18:42:55 FILA: 143 medição(ões) reenviada(s) em 0.57 s; restam 0
+coletor  | 18:42:55 [ciclo 810] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.048 ms, DISPONÍVEL | POST ok em 5.1 ms
+coletor  | 18:42:56 [ciclo 810] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.057 ms, DISPONÍVEL | POST ok em 4.9 ms
+coletor  | 18:43:00 [ciclo 811] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.064 ms, DISPONÍVEL | POST ok em 5.4 ms
+coletor  | 18:43:00 [ciclo 811] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.054 ms, DISPONÍVEL | POST ok em 5.0 ms
+coletor  | 18:43:05 [ciclo 812] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.053 ms, DISPONÍVEL | POST ok em 5.4 ms

@@ -1,0 +1,76 @@
+Evidência T03-f – Disponibilidade e tempo de resposta da API durante a falha (120 s)
+Data e hora: 17/11/2026 15:43:05
+Comando: docker compose exec coletor python medir_api.py --duracao 120
+----------------------------------------------------------------------
+Medindo http://192.168.10.30:5000/api/saude por 120 s, uma tentativa a cada 1 s
+18:36:32 #001 OK       9.78 ms
+18:36:33 #002 OK       1.55 ms
+18:36:34 #003 OK       1.38 ms
+18:36:35 #004 OK       1.41 ms
+18:36:36 #005 OK       1.45 ms
+18:36:37 #006 OK       1.27 ms
+18:36:38 #007 OK       1.30 ms
+18:36:39 #008 OK       1.43 ms
+18:36:40 #009 OK       1.72 ms
+18:36:41 #010 OK       1.31 ms
+18:36:42 #011 OK       1.58 ms
+18:36:43 #012 OK       1.47 ms
+18:36:44 #013 OK       1.41 ms
+18:36:45 #014 OK       1.57 ms
+18:36:46 #015 OK       1.54 ms
+18:36:47 #016 OK       1.46 ms
+18:36:48 #017 OK       1.48 ms
+18:36:49 #018 OK       1.40 ms
+18:36:50 #019 OK       1.40 ms
+18:36:51 #020 OK       1.47 ms
+18:36:52 #021 OK       1.41 ms
+18:36:53 #022 OK       1.45 ms
+18:36:54 #023 OK       1.44 ms
+18:36:55 #024 FALHA timed out
+18:36:58 #025 FALHA timed out
+18:37:01 #026 FALHA timed out
+18:37:04 #027 FALHA timed out
+18:37:07 #028 FALHA timed out
+18:37:10 #029 FALHA timed out
+18:37:13 #030 FALHA timed out
+18:37:16 #031 FALHA timed out
+18:37:19 #032 FALHA timed out
+18:37:22 #033 FALHA timed out
+18:37:25 #034 FALHA [Errno 113] No route to host
+18:37:27 #035 FALHA timed out
+18:37:30 #036 FALHA [Errno 113] No route to host
+18:37:31 #037 FALHA timed out
+18:37:34 #038 FALHA [Errno 113] No route to host
+18:37:35 #039 FALHA timed out
+18:37:38 #040 FALHA timed out
+18:37:41 #041 FALHA [Errno 113] No route to host
+18:37:42 #042 FALHA timed out
+18:37:45 #043 FALHA [Errno 113] No route to host
+18:37:46 #044 FALHA timed out
+18:37:49 #045 FALHA [Errno 113] No route to host
+18:37:50 #046 FALHA timed out
+18:37:53 #047 FALHA timed out
+18:37:56 #048 FALHA [Errno 113] No route to host
+18:37:57 #049 FALHA timed out
+18:38:00 #050 FALHA [Errno 113] No route to host
+18:38:01 #051 FALHA timed out
+18:38:04 #052 FALHA [Errno 113] No route to host
+18:38:05 #053 FALHA timed out
+18:38:08 #054 FALHA timed out
+18:38:11 #055 FALHA [Errno 113] No route to host
+18:38:12 #056 FALHA timed out
+18:38:15 #057 FALHA [Errno 113] No route to host
+18:38:16 #058 FALHA timed out
+18:38:19 #059 FALHA [Errno 113] No route to host
+18:38:20 #060 FALHA timed out
+18:38:23 #061 FALHA [Errno 113] No route to host
+18:38:24 #062 FALHA timed out
+18:38:27 #063 FALHA timed out
+18:38:30 #064 FALHA [Errno 113] No route to host
+18:38:31 #065 FALHA timed out
+
+Resumo
+  tentativas: 65 | respostas: 23 | falhas: 42
+  disponibilidade: 35.4%
+  tempo de resposta: médio 1.81 ms | mínimo 1.27 ms | máximo 9.78 ms
+

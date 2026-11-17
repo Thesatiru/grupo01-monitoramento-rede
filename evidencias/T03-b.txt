@@ -1,0 +1,16 @@
+Evidência T03-b – Log do coletor guardando medições na fila
+Data e hora: 17/11/2026 15:37:56
+Comando: docker compose logs --tail 12 coletor
+----------------------------------------------------------------------
+coletor  | 18:37:26 [ciclo 744] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.06 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (12 pendente(s))
+coletor  | 18:37:27 [ciclo 744] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.056 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (13 pendente(s))
+coletor  | 18:37:30 [ciclo 745] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.058 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (14 pendente(s))
+coletor  | 18:37:31 [ciclo 745] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.043 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (15 pendente(s))
+coletor  | 18:37:38 [ciclo 746] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (16 pendente(s))
+coletor  | 18:37:38 [ciclo 746] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.054 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (17 pendente(s))
+coletor  | 18:37:41 [ciclo 747] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.065 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (18 pendente(s))
+coletor  | 18:37:42 [ciclo 747] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.063 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (19 pendente(s))
+coletor  | 18:37:45 [ciclo 748] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.067 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (20 pendente(s))
+coletor  | 18:37:46 [ciclo 748] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.07 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (21 pendente(s))
+coletor  | 18:37:53 [ciclo 749] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (22 pendente(s))
+coletor  | 18:37:53 [ciclo 749] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.052 ms, DISPONÍVEL | fila ainda com medições antigas | guardada na fila local (23 pendente(s))

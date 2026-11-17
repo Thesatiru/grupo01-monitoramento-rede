@@ -1,0 +1,16 @@
+Evidência T02-b – Log do coletor durante a falha do AP-LAB
+Data e hora: 17/11/2026 15:34:56
+Comando: docker compose logs --tail 12 coletor
+----------------------------------------------------------------------
+coletor  | 18:34:26 [ciclo 708] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 5.0 ms
+coletor  | 18:34:30 [ciclo 709] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.056 ms, DISPONÍVEL | POST ok em 5.0 ms
+coletor  | 18:34:31 [ciclo 709] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 4.7 ms
+coletor  | 18:34:35 [ciclo 710] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.064 ms, DISPONÍVEL | POST ok em 7.2 ms
+coletor  | 18:34:36 [ciclo 710] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 4.6 ms
+coletor  | 18:34:40 [ciclo 711] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.062 ms, DISPONÍVEL | POST ok em 5.3 ms
+coletor  | 18:34:41 [ciclo 711] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 4.9 ms
+coletor  | 18:34:45 [ciclo 712] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.051 ms, DISPONÍVEL | POST ok em 4.9 ms
+coletor  | 18:34:46 [ciclo 712] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 6.2 ms
+coletor  | 18:34:50 [ciclo 713] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.054 ms, DISPONÍVEL | POST ok em 5.1 ms
+coletor  | 18:34:51 [ciclo 713] AP-LAB (192.168.10.11): 0/4 respostas, perda 100%, latência —, INDISPONÍVEL | POST ok em 4.7 ms
+coletor  | 18:34:55 [ciclo 714] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | POST ok em 6.2 ms

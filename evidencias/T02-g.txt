@@ -1,0 +1,36 @@
+Evidência T02-g – Disponibilidade na janela de 5 minutos após a falha
+Data e hora: 17/11/2026 15:36:32
+Requisição: GET http://localhost:5000/api/resumo?minutos=5
+----------------------------------------------------------------------
+{
+  "dispositivos": [
+    {
+      "ciclos": 60,
+      "ciclos_disponiveis": 32,
+      "disponibilidade_pct": 53.3,
+      "disponivel_agora": true,
+      "dispositivo": "AP-LAB",
+      "ip": "192.168.10.11",
+      "latencia_atual_ms": 0.051,
+      "latencia_media_ms": 0.055,
+      "perda_atual_pct": 0.0,
+      "perda_media_pct": 47.1,
+      "ultima_coleta": "2026-11-17T18:36:30.364+00:00"
+    },
+    {
+      "ciclos": 60,
+      "ciclos_disponiveis": 60,
+      "disponibilidade_pct": 100.0,
+      "disponivel_agora": true,
+      "dispositivo": "SW-LAB",
+      "ip": "192.168.10.10",
+      "latencia_atual_ms": 0.049,
+      "latencia_media_ms": 0.061,
+      "perda_atual_pct": 0.0,
+      "perda_media_pct": 0.0,
+      "ultima_coleta": "2026-11-17T18:36:29.747+00:00"
+    }
+  ],
+  "gerado_em": "2026-11-17T18:36:32+00:00",
+  "janela_minutos": 5
+}

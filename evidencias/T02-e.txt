@@ -1,0 +1,5 @@
+Evidência T02-e – Religamento do AP-LAB
+Data e hora: 17/11/2026 15:36:17
+Comando: docker start ap-lab
+----------------------------------------------------------------------
+ap-lab

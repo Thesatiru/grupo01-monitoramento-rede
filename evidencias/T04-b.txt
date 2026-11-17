@@ -1,0 +1,36 @@
+Evidência T04-b – Quantidade de ciclos gravados por dispositivo na última hora
+Data e hora: 17/11/2026 15:52:59
+Requisição: GET http://localhost:5000/api/resumo?minutos=60
+----------------------------------------------------------------------
+{
+  "dispositivos": [
+    {
+      "ciclos": 720,
+      "ciclos_disponiveis": 692,
+      "disponibilidade_pct": 96.1,
+      "disponivel_agora": true,
+      "dispositivo": "AP-LAB",
+      "ip": "192.168.10.11",
+      "latencia_atual_ms": 0.052,
+      "latencia_media_ms": 0.051,
+      "perda_atual_pct": 0.0,
+      "perda_media_pct": 3.9,
+      "ultima_coleta": "2026-11-17T18:52:55.388+00:00"
+    },
+    {
+      "ciclos": 720,
+      "ciclos_disponiveis": 720,
+      "disponibilidade_pct": 100.0,
+      "disponivel_agora": true,
+      "dispositivo": "SW-LAB",
+      "ip": "192.168.10.10",
+      "latencia_atual_ms": 0.075,
+      "latencia_media_ms": 0.059,
+      "perda_atual_pct": 0.0,
+      "perda_media_pct": 0.0,
+      "ultima_coleta": "2026-11-17T18:52:54.769+00:00"
+    }
+  ],
+  "gerado_em": "2026-11-17T18:52:59+00:00",
+  "janela_minutos": 60
+}

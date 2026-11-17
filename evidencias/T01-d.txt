@@ -1,0 +1,40 @@
+Evidência T01-d – Tempo de resposta e disponibilidade da API (30 s)
+Data e hora: 17/11/2026 15:06:28
+Comando: docker compose exec -T coletor python medir_api.py --duracao 30
+----------------------------------------------------------------------
+Medindo http://192.168.10.30:5000/api/saude por 30 s, uma tentativa a cada 1 s
+18:05:58 #001 OK       8.94 ms
+18:05:59 #002 OK       1.39 ms
+18:06:00 #003 OK       1.54 ms
+18:06:01 #004 OK       1.49 ms
+18:06:02 #005 OK       1.62 ms
+18:06:03 #006 OK       1.31 ms
+18:06:04 #007 OK       1.45 ms
+18:06:05 #008 OK       1.42 ms
+18:06:06 #009 OK       1.30 ms
+18:06:07 #010 OK       1.81 ms
+18:06:08 #011 OK       1.56 ms
+18:06:09 #012 OK       1.37 ms
+18:06:10 #013 OK       1.42 ms
+18:06:11 #014 OK       1.43 ms
+18:06:12 #015 OK       1.50 ms
+18:06:13 #016 OK       1.33 ms
+18:06:14 #017 OK       1.36 ms
+18:06:15 #018 OK       1.36 ms
+18:06:16 #019 OK       1.44 ms
+18:06:17 #020 OK       1.75 ms
+18:06:18 #021 OK       1.51 ms
+18:06:19 #022 OK       1.47 ms
+18:06:20 #023 OK       1.55 ms
+18:06:21 #024 OK       1.66 ms
+18:06:22 #025 OK       1.54 ms
+18:06:23 #026 OK       1.47 ms
+18:06:24 #027 OK       1.22 ms
+18:06:25 #028 OK       1.42 ms
+18:06:26 #029 OK       1.44 ms
+18:06:27 #030 OK       1.90 ms
+
+Resumo
+  tentativas: 30 | respostas: 30 | falhas: 0
+  disponibilidade: 100.0%
+  tempo de resposta: médio 1.73 ms | mínimo 1.22 ms | máximo 8.94 ms

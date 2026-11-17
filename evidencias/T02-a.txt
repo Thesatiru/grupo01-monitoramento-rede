@@ -1,0 +1,5 @@
+Evidência T02-a – Desligamento do AP-LAB
+Data e hora: 17/11/2026 15:33:56
+Comando: docker stop ap-lab
+----------------------------------------------------------------------
+ap-lab

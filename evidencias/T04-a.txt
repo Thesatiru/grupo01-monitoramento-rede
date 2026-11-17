@@ -1,0 +1,6 @@
+Evidência T04-a – Último ciclo executado pelo coletor
+Data e hora: 17/11/2026 15:52:59
+Comando: docker compose logs --tail 2 coletor
+----------------------------------------------------------------------
+coletor  | 18:52:55 [ciclo 930] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.075 ms, DISPONÍVEL | POST ok em 4.7 ms
+coletor  | 18:52:56 [ciclo 930] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.052 ms, DISPONÍVEL | POST ok em 4.9 ms

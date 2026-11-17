@@ -1,0 +1,10 @@
+Evidência T01-a – Contêineres em execução
+Data e hora: 17/11/2026 15:05:34
+Comando: docker compose ps
+----------------------------------------------------------------------
+NAME      IMAGE             COMMAND                  SERVICE   CREATED          STATUS                    PORTS
+ap-lab    alpine:3.20       "sleep infinity"         ap-lab    30 minutes ago   Up 30 minutes             
+api       grupo01-api       "python api.py"          api       30 minutes ago   Up 30 minutes (healthy)   0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp
+coletor   grupo01-coletor   "python coletor.py"      coletor   30 minutes ago   Up 30 minutes             
+painel    grupo01-painel    "streamlit run paine…"   painel    30 minutes ago   Up 30 minutes             0.0.0.0:8501->8501/tcp, [::]:8501->8501/tcp
+sw-lab    alpine:3.20       "sleep infinity"         sw-lab    30 minutes ago   Up 30 minutes

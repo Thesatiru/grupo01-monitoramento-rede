@@ -1,0 +1,5 @@
+Evidência T03-d – Religamento da API
+Data e hora: 17/11/2026 15:42:50
+Comando: docker start api
+----------------------------------------------------------------------
+api

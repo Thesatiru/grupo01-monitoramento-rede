@@ -1,0 +1,86 @@
+# Grupo 01 – Monitoramento da rede do campus (Etapa 3)
+# Rede virtual que reproduz a LAN proposta na Etapa 2 (192.168.10.0/24).
+name: grupo01
+
+services:
+  # Alvos monitorados: contêineres mínimos que só precisam responder ao ping.
+  sw-lab:
+    image: alpine:3.20
+    container_name: sw-lab
+    hostname: sw-lab
+    command: ["sleep", "infinity"]
+    init: true
+    networks:
+      campus_net:
+        ipv4_address: 192.168.10.10
+
+  ap-lab:
+    image: alpine:3.20
+    container_name: ap-lab
+    hostname: ap-lab
+    command: ["sleep", "infinity"]
+    init: true
+    networks:
+      campus_net:
+        ipv4_address: 192.168.10.11
+
+  coletor:
+    build: ./coletor
+    container_name: coletor
+    environment:
+      ALVOS: "SW-LAB=192.168.10.10,AP-LAB=192.168.10.11"
+      API_URL: "http://192.168.10.30:5000"
+      INTERVALO: "5"
+      PACOTES: "4"
+    volumes:
+      - dados_coletor:/dados
+    depends_on:
+      - sw-lab
+      - ap-lab
+    restart: unless-stopped
+    networks:
+      campus_net:
+        ipv4_address: 192.168.10.20
+
+  api:
+    build: ./api
+    container_name: api
+    volumes:
+      - dados_api:/dados
+    ports:
+      - "5000:5000"
+    restart: "no"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/api/saude', timeout=2)"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    networks:
+      campus_net:
+        ipv4_address: 192.168.10.30
+
+  painel:
+    build: ./painel
+    container_name: painel
+    environment:
+      API_URL: "http://192.168.10.30:5000"
+    ports:
+      - "8501:8501"
+    depends_on:
+      - api
+    networks:
+      campus_net:
+        ipv4_address: 192.168.10.31
+
+networks:
+  campus_net:
+    name: campus_net
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 192.168.10.0/24
+          gateway: 192.168.10.1
+
+volumes:
+  dados_api:
+  dados_coletor:

@@ -1,0 +1,16 @@
+Evidência T01-b – Log do coletor com medições enviadas à API
+Data e hora: 17/11/2026 15:05:54
+Comando: docker compose logs --tail 12 coletor
+----------------------------------------------------------------------
+coletor  | 18:05:25 [ciclo 360] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.065 ms, DISPONÍVEL | POST ok em 6.1 ms
+coletor  | 18:05:25 [ciclo 360] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.065 ms, DISPONÍVEL | POST ok em 6.4 ms
+coletor  | 18:05:30 [ciclo 361] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.077 ms, DISPONÍVEL | POST ok em 7.0 ms
+coletor  | 18:05:30 [ciclo 361] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.069 ms, DISPONÍVEL | POST ok em 5.1 ms
+coletor  | 18:05:35 [ciclo 362] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.06 ms, DISPONÍVEL | POST ok em 4.9 ms
+coletor  | 18:05:35 [ciclo 362] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.062 ms, DISPONÍVEL | POST ok em 5.2 ms
+coletor  | 18:05:40 [ciclo 363] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | POST ok em 5.0 ms
+coletor  | 18:05:40 [ciclo 363] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.051 ms, DISPONÍVEL | POST ok em 5.0 ms
+coletor  | 18:05:45 [ciclo 364] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.059 ms, DISPONÍVEL | POST ok em 4.8 ms
+coletor  | 18:05:45 [ciclo 364] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.05 ms, DISPONÍVEL | POST ok em 4.5 ms
+coletor  | 18:05:50 [ciclo 365] SW-LAB (192.168.10.10): 4/4 respostas, perda 0%, latência 0.058 ms, DISPONÍVEL | POST ok em 4.8 ms
+coletor  | 18:05:50 [ciclo 365] AP-LAB (192.168.10.11): 4/4 respostas, perda 0%, latência 0.055 ms, DISPONÍVEL | POST ok em 4.5 ms
